@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ColorPicker Material
+  m_Name: ColorPicker Material Vorne
   m_Shader: {fileID: 4800000, guid: 8fce4fcca9b09d34bbc45c52300a31ae, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []

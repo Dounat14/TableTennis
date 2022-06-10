@@ -10,6 +10,7 @@ public class ColorPreview : MonoBehaviour
 
     private void Start()
     {
+        colorPicker.color = color;
         material.color = colorPicker.color;
         colorPicker.onColorChanged += OnColorChanged;
     }
