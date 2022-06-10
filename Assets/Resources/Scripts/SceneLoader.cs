@@ -6,9 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader: MonoBehaviour
 {
-    public void StartButton()
+    public void NormalButton()
     {
         SceneManager.LoadScene("Normal");
+    }
+   
+    public void UbungButton()
+    {
+        SceneManager.LoadScene("Ubung");
     }
     public void QuitGame()
     {
