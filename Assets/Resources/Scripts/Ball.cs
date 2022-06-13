@@ -13,6 +13,9 @@ public class Ball : MonoBehaviour
         audio.clip = audioSource;
     }
     void OnCollisionEnter(Collision col){
+        if(col.gameObject.name == "Bat")
+            GetComponent<AudioSource>().Play();
+        if (col.gameObject.name == "Tabletennis")
             GetComponent<AudioSource>().Play();
     }
 }
