@@ -10,10 +10,13 @@ public class SceneLoader: MonoBehaviour
     {
         SceneManager.LoadScene("Normal");
     }
-   
     public void UbungButton()
     {
         SceneManager.LoadScene("Ubung");
+    }
+    public void MenuButton()
+    {
+        SceneManager.LoadScene("Menu");
     }
     public void QuitGame()
     {

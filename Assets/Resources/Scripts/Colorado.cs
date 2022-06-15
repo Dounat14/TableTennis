@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Colorado : MonoBehaviour
 {
-    public Collider[] collider;
+    public Collider[] colli;
     // Start is called before the first frame update
     void Start()
     {
-        for(int i = 0; i < collider.Length; i++)
+        for(int i = 0; i < colli.Length; i++)
         {
-            Physics.IgnoreCollision(collider[i], GetComponent<Collider>());
+            Physics.IgnoreCollision(colli[i], GetComponent<Collider>());
         }
         
     }
@@ -18,6 +18,5 @@ public class Colorado : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
 }
