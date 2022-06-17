@@ -8,6 +8,9 @@ public class HandPresence : MonoBehaviour
     public InputDeviceCharacteristics controllerCharacteristics;    
     private InputDevice targetDevice;
     public Animator handAnimator;
+    public bool menu;
+    public GameObject Menu;
+    private bool onee;
 
     void Start()
     {
@@ -43,6 +46,19 @@ public class HandPresence : MonoBehaviour
         else
         {
             handAnimator.SetFloat("Grip", 0);
+        }
+        if (targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out menu))
+        {
+            if (menu == true&&onee==false)
+            {
+                onee = true;
+                if (!Menu.activeInHierarchy)
+                    Menu.SetActive(true);
+                else
+                    Menu.SetActive(false);
+            }
+            if(menu == false)
+                onee = false;
         }
     }
 
