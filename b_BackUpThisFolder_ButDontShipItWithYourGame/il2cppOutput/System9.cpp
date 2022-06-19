@@ -2063,19 +2063,19 @@ struct AsyncResult_t125D959CA0F9FB74EF9F7DF4E04F15BB1B265760_marshaled_com
 struct DeflateStreamNative_t06B674E1D2EFD46989197EFB1E33E0B6564793CD  : public RuntimeObject
 {
 	// System.IO.Compression.DeflateStreamNative/UnmanagedReadOrWrite System.IO.Compression.DeflateStreamNative::feeder
-	UnmanagedReadOrWrite_t3705731796B1AD7D7A711D794FF08961B623E9BA* ___feeder_0;
+	UnmanagedReadOrWrite_t3705731796B1AD7D7A711D794FF08961B623E9BA* ___feeder_1;
 	// System.IO.Stream System.IO.Compression.DeflateStreamNative::base_stream
-	Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___base_stream_1;
+	Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___base_stream_2;
 	// System.IO.Compression.DeflateStreamNative/SafeDeflateStreamHandle System.IO.Compression.DeflateStreamNative::z_stream
-	SafeDeflateStreamHandle_t533B0C5AB7C020BB3EF5074DA77BDFA46D4298D8* ___z_stream_2;
+	SafeDeflateStreamHandle_t533B0C5AB7C020BB3EF5074DA77BDFA46D4298D8* ___z_stream_3;
 	// System.Runtime.InteropServices.GCHandle System.IO.Compression.DeflateStreamNative::data
-	GCHandle_tC44F6F72EE68BD4CFABA24309DA7A179D41127DC ___data_3;
+	GCHandle_tC44F6F72EE68BD4CFABA24309DA7A179D41127DC ___data_4;
 	// System.Boolean System.IO.Compression.DeflateStreamNative::disposed
-	bool ___disposed_4;
+	bool ___disposed_5;
 	// System.Byte[] System.IO.Compression.DeflateStreamNative::io_buffer
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___io_buffer_5;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___io_buffer_6;
 	// System.Exception System.IO.Compression.DeflateStreamNative::last_error
-	Exception_t* ___last_error_6;
+	Exception_t* ___last_error_7;
 };
 
 // System.MulticastDelegate
@@ -7896,7 +7896,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DeflateStreamNative_t06B674E1D2EFD46989197EFB
 		GCHandle_tC44F6F72EE68BD4CFABA24309DA7A179D41127DC L_3;
 		L_3 = GCHandle_Alloc_m74B02418DDB89BF52FA0F7412D14E6D19E1949C6(L_2, NULL);
 		NullCheck(L_1);
-		L_1->___data_3 = L_3;
+		L_1->___data_4 = L_3;
 		DeflateStreamNative_t06B674E1D2EFD46989197EFB1E33E0B6564793CD* L_4 = V_0;
 		int32_t L_5 = ___mode1;
 		G_B1_0 = L_4;
@@ -7927,27 +7927,27 @@ IL_0025:
 IL_0031:
 	{
 		NullCheck(G_B3_1);
-		G_B3_1->___feeder_0 = G_B3_0;
-		Il2CppCodeGenWriteBarrier((void**)(&G_B3_1->___feeder_0), (void*)G_B3_0);
+		G_B3_1->___feeder_1 = G_B3_0;
+		Il2CppCodeGenWriteBarrier((void**)(&G_B3_1->___feeder_1), (void*)G_B3_0);
 		DeflateStreamNative_t06B674E1D2EFD46989197EFB1E33E0B6564793CD* L_8 = V_0;
 		int32_t L_9 = ___mode1;
 		bool L_10 = ___gzip2;
 		DeflateStreamNative_t06B674E1D2EFD46989197EFB1E33E0B6564793CD* L_11 = V_0;
 		NullCheck(L_11);
-		UnmanagedReadOrWrite_t3705731796B1AD7D7A711D794FF08961B623E9BA* L_12 = L_11->___feeder_0;
+		UnmanagedReadOrWrite_t3705731796B1AD7D7A711D794FF08961B623E9BA* L_12 = L_11->___feeder_1;
 		DeflateStreamNative_t06B674E1D2EFD46989197EFB1E33E0B6564793CD* L_13 = V_0;
 		NullCheck(L_13);
-		GCHandle_tC44F6F72EE68BD4CFABA24309DA7A179D41127DC L_14 = L_13->___data_3;
+		GCHandle_tC44F6F72EE68BD4CFABA24309DA7A179D41127DC L_14 = L_13->___data_4;
 		intptr_t L_15;
 		L_15 = GCHandle_ToIntPtr_m4895C6E6C93FD6CEE9867C8A32C9E06A5DE5C5DC(L_14, NULL);
 		SafeDeflateStreamHandle_t533B0C5AB7C020BB3EF5074DA77BDFA46D4298D8* L_16;
 		L_16 = DeflateStreamNative_CreateZStream_m5075DD90424301C1C82A2142AA530FDC6F345006(L_9, L_10, L_12, L_15, NULL);
 		NullCheck(L_8);
-		L_8->___z_stream_2 = L_16;
-		Il2CppCodeGenWriteBarrier((void**)(&L_8->___z_stream_2), (void*)L_16);
+		L_8->___z_stream_3 = L_16;
+		Il2CppCodeGenWriteBarrier((void**)(&L_8->___z_stream_3), (void*)L_16);
 		DeflateStreamNative_t06B674E1D2EFD46989197EFB1E33E0B6564793CD* L_17 = V_0;
 		NullCheck(L_17);
-		SafeDeflateStreamHandle_t533B0C5AB7C020BB3EF5074DA77BDFA46D4298D8* L_18 = L_17->___z_stream_2;
+		SafeDeflateStreamHandle_t533B0C5AB7C020BB3EF5074DA77BDFA46D4298D8* L_18 = L_17->___z_stream_3;
 		NullCheck(L_18);
 		bool L_19;
 		L_19 = VirtualFuncInvoker0< bool >::Invoke(5 /* System.Boolean System.Runtime.InteropServices.SafeHandle::get_IsInvalid() */, L_18);
@@ -7968,8 +7968,8 @@ IL_006a:
 		DeflateStreamNative_t06B674E1D2EFD46989197EFB1E33E0B6564793CD* L_21 = V_0;
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_22 = ___compressedStream0;
 		NullCheck(L_21);
-		L_21->___base_stream_1 = L_22;
-		Il2CppCodeGenWriteBarrier((void**)(&L_21->___base_stream_1), (void*)L_22);
+		L_21->___base_stream_2 = L_22;
+		Il2CppCodeGenWriteBarrier((void**)(&L_21->___base_stream_2), (void*)L_22);
 		DeflateStreamNative_t06B674E1D2EFD46989197EFB1E33E0B6564793CD* L_23 = V_0;
 		return L_23;
 	}
@@ -8021,14 +8021,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DeflateStreamNative_Dispose_m4FB7DA2D3E5
 		}
 	}
 	{
-		bool L_1 = __this->___disposed_4;
+		bool L_1 = __this->___disposed_5;
 		if (L_1)
 		{
 			goto IL_001a;
 		}
 	}
 	{
-		__this->___disposed_4 = (bool)1;
+		__this->___disposed_5 = (bool)1;
 		il2cpp_codegen_runtime_class_init_inline(GC_t920F9CF6EBB7C787E5010A4352E1B587F356DC58_il2cpp_TypeInfo_var);
 		GC_SuppressFinalize_m3352E2F2119EB46913B51B7AAE2F217C63C35F2A(__this, NULL);
 		goto IL_0025;
@@ -8038,22 +8038,22 @@ IL_001a:
 	{
 		il2cpp_codegen_runtime_class_init_inline(Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE_il2cpp_TypeInfo_var);
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_2 = ((Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE_StaticFields*)il2cpp_codegen_static_fields_for(Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE_il2cpp_TypeInfo_var))->___Null_1;
-		__this->___base_stream_1 = L_2;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___base_stream_1), (void*)L_2);
+		__this->___base_stream_2 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___base_stream_2), (void*)L_2);
 	}
 
 IL_0025:
 	{
-		__this->___io_buffer_5 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)NULL;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___io_buffer_5), (void*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)NULL);
-		SafeDeflateStreamHandle_t533B0C5AB7C020BB3EF5074DA77BDFA46D4298D8* L_3 = __this->___z_stream_2;
+		__this->___io_buffer_6 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___io_buffer_6), (void*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)NULL);
+		SafeDeflateStreamHandle_t533B0C5AB7C020BB3EF5074DA77BDFA46D4298D8* L_3 = __this->___z_stream_3;
 		if (!L_3)
 		{
 			goto IL_004c;
 		}
 	}
 	{
-		SafeDeflateStreamHandle_t533B0C5AB7C020BB3EF5074DA77BDFA46D4298D8* L_4 = __this->___z_stream_2;
+		SafeDeflateStreamHandle_t533B0C5AB7C020BB3EF5074DA77BDFA46D4298D8* L_4 = __this->___z_stream_3;
 		NullCheck(L_4);
 		bool L_5;
 		L_5 = VirtualFuncInvoker0< bool >::Invoke(5 /* System.Boolean System.Runtime.InteropServices.SafeHandle::get_IsInvalid() */, L_4);
@@ -8063,15 +8063,15 @@ IL_0025:
 		}
 	}
 	{
-		SafeDeflateStreamHandle_t533B0C5AB7C020BB3EF5074DA77BDFA46D4298D8* L_6 = __this->___z_stream_2;
+		SafeDeflateStreamHandle_t533B0C5AB7C020BB3EF5074DA77BDFA46D4298D8* L_6 = __this->___z_stream_3;
 		NullCheck(L_6);
 		SafeHandle_Dispose_m4FB5B8A7ED78B90757F1B570D4025F3BA26A39F3(L_6, NULL);
 	}
 
 IL_004c:
 	{
-		GCHandle_tC44F6F72EE68BD4CFABA24309DA7A179D41127DC L_7 = __this->___data_3;
-		GCHandle_tC44F6F72EE68BD4CFABA24309DA7A179D41127DC* L_8 = (&__this->___data_3);
+		GCHandle_tC44F6F72EE68BD4CFABA24309DA7A179D41127DC L_7 = __this->___data_4;
+		GCHandle_tC44F6F72EE68BD4CFABA24309DA7A179D41127DC* L_8 = (&__this->___data_4);
 		bool L_9;
 		L_9 = GCHandle_get_IsAllocated_m241908103D8D867E11CCAB73C918729825E86843(L_8, NULL);
 		if (!L_9)
@@ -8080,7 +8080,7 @@ IL_004c:
 		}
 	}
 	{
-		GCHandle_tC44F6F72EE68BD4CFABA24309DA7A179D41127DC* L_10 = (&__this->___data_3);
+		GCHandle_tC44F6F72EE68BD4CFABA24309DA7A179D41127DC* L_10 = (&__this->___data_4);
 		GCHandle_Free_m1320A260E487EB1EA6D95F9E54BFFCB5A4EF83A3(L_10, NULL);
 	}
 
@@ -8100,7 +8100,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DeflateStreamNative_Flush_m60D8D1C3DEBB7
 	}
 	int32_t V_0 = 0;
 	{
-		SafeDeflateStreamHandle_t533B0C5AB7C020BB3EF5074DA77BDFA46D4298D8* L_0 = __this->___z_stream_2;
+		SafeDeflateStreamHandle_t533B0C5AB7C020BB3EF5074DA77BDFA46D4298D8* L_0 = __this->___z_stream_3;
 		int32_t L_1;
 		L_1 = DeflateStreamNative_Flush_mAC7D59B136EB2C8B1512123F21B91976CDE33D5F(L_0, NULL);
 		V_0 = L_1;
@@ -8120,7 +8120,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DeflateStreamNative_ReadZStream_m6407
 	}
 	int32_t V_0 = 0;
 	{
-		SafeDeflateStreamHandle_t533B0C5AB7C020BB3EF5074DA77BDFA46D4298D8* L_0 = __this->___z_stream_2;
+		SafeDeflateStreamHandle_t533B0C5AB7C020BB3EF5074DA77BDFA46D4298D8* L_0 = __this->___z_stream_3;
 		intptr_t L_1 = ___buffer0;
 		int32_t L_2 = ___length1;
 		int32_t L_3;
@@ -8143,7 +8143,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DeflateStreamNative_WriteZStream_m4B066C
 	}
 	int32_t V_0 = 0;
 	{
-		SafeDeflateStreamHandle_t533B0C5AB7C020BB3EF5074DA77BDFA46D4298D8* L_0 = __this->___z_stream_2;
+		SafeDeflateStreamHandle_t533B0C5AB7C020BB3EF5074DA77BDFA46D4298D8* L_0 = __this->___z_stream_3;
 		intptr_t L_1 = ___buffer0;
 		int32_t L_2 = ___length1;
 		int32_t L_3;
@@ -8212,7 +8212,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DeflateStreamNative_UnmanagedRead_mC1
 	int32_t V_3 = 0;
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = __this->___io_buffer_5;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = __this->___io_buffer_6;
 		if (L_0)
 		{
 			goto IL_0018;
@@ -8220,14 +8220,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DeflateStreamNative_UnmanagedRead_mC1
 	}
 	{
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)4096));
-		__this->___io_buffer_5 = L_1;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___io_buffer_5), (void*)L_1);
+		__this->___io_buffer_6 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___io_buffer_6), (void*)L_1);
 	}
 
 IL_0018:
 	{
 		int32_t L_2 = ___length1;
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = __this->___io_buffer_5;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = __this->___io_buffer_6;
 		NullCheck(L_3);
 		il2cpp_codegen_runtime_class_init_inline(Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
 		int32_t L_4;
@@ -8236,8 +8236,8 @@ IL_0018:
 	}
 	try
 	{// begin try (depth: 1)
-		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_5 = __this->___base_stream_1;
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_6 = __this->___io_buffer_5;
+		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_5 = __this->___base_stream_2;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_6 = __this->___io_buffer_6;
 		int32_t L_7 = V_0;
 		NullCheck(L_5);
 		int32_t L_8;
@@ -8259,8 +8259,8 @@ CATCH_003d:
 	{// begin catch(System.Exception)
 		V_2 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
 		Exception_t* L_9 = V_2;
-		__this->___last_error_6 = L_9;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___last_error_6), (void*)L_9);
+		__this->___last_error_7 = L_9;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___last_error_7), (void*)L_9);
 		V_3 = ((int32_t)-12);
 		IL2CPP_POP_ACTIVE_EXCEPTION();
 		goto IL_005e;
@@ -8275,7 +8275,7 @@ IL_004a:
 		}
 	}
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_11 = __this->___io_buffer_5;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_11 = __this->___io_buffer_6;
 		intptr_t L_12 = ___buffer0;
 		int32_t L_13 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(Marshal_tD976A56A90263C3CE2B780D4B1CADADE2E70B4A7_il2cpp_TypeInfo_var);
@@ -8358,7 +8358,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DeflateStreamNative_UnmanagedWrite_m7
 
 IL_0004:
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = __this->___io_buffer_5;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = __this->___io_buffer_6;
 		if (L_0)
 		{
 			goto IL_001c;
@@ -8366,29 +8366,29 @@ IL_0004:
 	}
 	{
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)4096));
-		__this->___io_buffer_5 = L_1;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___io_buffer_5), (void*)L_1);
+		__this->___io_buffer_6 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___io_buffer_6), (void*)L_1);
 	}
 
 IL_001c:
 	{
 		int32_t L_2 = ___length1;
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = __this->___io_buffer_5;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = __this->___io_buffer_6;
 		NullCheck(L_3);
 		il2cpp_codegen_runtime_class_init_inline(Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
 		int32_t L_4;
 		L_4 = Math_Min_m1F346FEDDC77AC1EC0C4EF1AC6BA59F0EC7980F8(L_2, ((int32_t)(((RuntimeArray*)L_3)->max_length)), NULL);
 		V_1 = L_4;
 		intptr_t L_5 = ___buffer0;
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_6 = __this->___io_buffer_5;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_6 = __this->___io_buffer_6;
 		int32_t L_7 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(Marshal_tD976A56A90263C3CE2B780D4B1CADADE2E70B4A7_il2cpp_TypeInfo_var);
 		Marshal_Copy_m92700C9E60BAB2FDAF6CE02C16EFE9DCB7D6035E(L_5, L_6, 0, L_7, NULL);
 	}
 	try
 	{// begin try (depth: 1)
-		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_8 = __this->___base_stream_1;
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_9 = __this->___io_buffer_5;
+		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_8 = __this->___base_stream_2;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_9 = __this->___io_buffer_6;
 		int32_t L_10 = V_1;
 		NullCheck(L_8);
 		VirtualActionInvoker3< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(33 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_8, L_9, 0, L_10);
@@ -8408,8 +8408,8 @@ CATCH_004e:
 	{// begin catch(System.Exception)
 		V_2 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
 		Exception_t* L_11 = V_2;
-		__this->___last_error_6 = L_11;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___last_error_6), (void*)L_11);
+		__this->___last_error_7 = L_11;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___last_error_7), (void*)L_11);
 		V_3 = ((int32_t)-12);
 		IL2CPP_POP_ACTIVE_EXCEPTION();
 		goto IL_007a;
@@ -8466,7 +8466,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DeflateStreamNative_CheckResult_m9354BDD
 
 IL_0005:
 	{
-		Exception_t** L_1 = (&__this->___last_error_6);
+		Exception_t** L_1 = (&__this->___last_error_7);
 		Exception_t* L_2;
 		L_2 = InterlockedExchangeImpl<Exception_t*>(L_1, (Exception_t*)NULL);
 		V_0 = L_2;

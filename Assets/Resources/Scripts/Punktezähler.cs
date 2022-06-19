@@ -11,11 +11,14 @@ public class Punktezähler : MonoBehaviour
     private bool bat2;
     private bool floor;
     private bool first;
+    private bool equal;
 
     public float Player1;
     public float Player2;
     public float tisch11;
     public float tisch22;
+    public float Satz1;
+    public float Satz2;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -229,5 +232,44 @@ public class Punktezähler : MonoBehaviour
             transform.position = new Vector3(-2, (float)0.2, (float)-0.015);
             GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
         }
+
+        if (Player1 == 10 && Player2 == 10)
+        {
+            equal = true;
+        }
+
+        if(equal == true)
+        {
+            if (Player1 == Player2 + 2)
+            {
+                Satz1++;
+                Player1 = 0;
+                Player2 = 0;
+                equal = false;
+            }
+            if (Player2 == Player1 + 2)
+            {
+                Satz2++;
+                Player1 = 0;
+                Player2 = 0;
+                equal = false;
+            }
+        }
+
+        if (Player1==11&&!equal)
+        {
+            Satz1++;
+            Player1 = 0;
+            Player2 = 0;
+        }
+
+        if (Player2==11&&!equal)
+        {
+            Satz2++;
+            Player2 = 0;
+            Player1 = 0;
+        }
+
+
     }
 }
