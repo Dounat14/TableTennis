@@ -28426,6 +28426,8 @@ struct Ball_t3B9BED2176F4B268C18E329E499D8EC9914B5E2B  : public MonoBehaviour_t5
 {
 	// UnityEngine.AudioClip Ball::audioSource
 	AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___audioSource_4;
+	// UnityEngine.Rigidbody Ball::rigidbody
+	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ___rigidbody_5;
 };
 
 // Oculus.Platform.Samples.VrHoops.BallEjector

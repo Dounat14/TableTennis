@@ -1137,7 +1137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 2111084087}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -1253,7 +1253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 8300000, guid: 03c65632b0d0aa04a977ffdfa9fc7ce0, type: 3}
-  rigidbody: {fileID: 0}
+  rigidbody: {fileID: 279539721}
 --- !u!82 &279539710
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1385,7 +1385,7 @@ MonoBehaviour:
   m_Script: {fileID: -1029778088, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interpolate: 0
+  _interpolate: 1
   _syncPosition: 1
   _syncRotation: 1
   _syncScale: 1
@@ -1426,6 +1426,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d388e1aed3bf7654a9957d60c12bf356, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &279539721 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 1291743089180749402, guid: 5fecca7fcae2d06439e097fb18e80a25, type: 3}
+  m_PrefabInstance: {fileID: 1291743089225235535}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &327872484
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2173,7 +2178,7 @@ MonoBehaviour:
   m_Script: {fileID: -1029778088, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interpolate: 0
+  _interpolate: 1
   _syncPosition: 1
   _syncRotation: 1
   _syncScale: 1
@@ -3773,7 +3778,7 @@ MonoBehaviour:
   m_Script: {fileID: -1029778088, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interpolate: 0
+  _interpolate: 1
   _syncPosition: 1
   _syncRotation: 1
   _syncScale: 1
@@ -3907,9 +3912,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Beenden
-
-'
+  m_text: "Schlie\xDFen\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4729,7 +4732,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 34b4c07a2f27a2e468222a84a5ea3f75, type: 3}
       propertyPath: m_LocalScale.x
-      value: -0.45100006
+      value: -0.451
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 34b4c07a2f27a2e468222a84a5ea3f75, type: 3}
       propertyPath: m_LocalScale.y
@@ -6316,7 +6319,7 @@ GameObject:
   - component: {fileID: 1682866986}
   - component: {fileID: 1682866985}
   m_Layer: 5
-  m_Name: Beenden
+  m_Name: "Schlie\xDFen"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8399,7 +8402,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1291743089180749402, guid: 5fecca7fcae2d06439e097fb18e80a25, type: 3}
       propertyPath: m_Mass
-      value: 0.3
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1291743089180749402, guid: 5fecca7fcae2d06439e097fb18e80a25, type: 3}
       propertyPath: m_Interpolate
