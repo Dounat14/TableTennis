@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Resources/Scenes/Normal.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Resources/Scenes/Ubung.unity
+    guid: 2638fcb1b48207b4083eebe1d4443f31
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 16d57fec78a5ce345a23deed07915965, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: 407d08e3cd8256d4193bcf5699be99c2, type: 2}
